@@ -19,13 +19,11 @@ public class Main {
             System.out.println("You chose MP4Player:");
         }
 
-        // Test directly
         player.playAudio();
         player.playVideo();
 
         System.out.println();
-
-        // Test with Device
+        
         Device device = new Device(player);
         System.out.println("Using Device:");
         device.playAudio();
@@ -33,4 +31,5 @@ public class Main {
 
         scanner.close();
     }
+
 }
